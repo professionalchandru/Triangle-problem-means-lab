@@ -69,10 +69,10 @@ const App = () => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative" id="start">
       {maximumTotal ? (
         <>
-          <small className="font-bold">*Note: please reduce your zoom size to view entire triangle</small>
+          <small className="font-bold">*Note: please scroll right or left to view entire triangle. <br /> This is happening due to the size of the triangle is too high than view port</small>
           <p className="text-3xl text-center mt-10 pb-10 italic text-blue-600">
             total {maximumTotal}
           </p>

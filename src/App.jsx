@@ -36,9 +36,19 @@ const App = () => {
         } else if (char.trim() !== "") { // Checking the character is whitespace
           localString = localString + char;
           count += 1;
+          if(count === textFromFile.length){
+            charArry.push(Number(localString));
+            localString = "";
+            if (i === charArry.length) { // Checking row and charArray having same length to move to next row
+              rowArr.push(charArry);
+              i += 1;
+              charArry = [];
+            }
+          }
         } else {
           charArry.push(Number(localString)); // Conver current set of string to number and store it in charArray
           localString = "";
+
           if (i === charArry.length) { // Checking row and charArray having same length to move to next row
             rowArr.push(charArry);
             i += 1;

@@ -15,5 +15,5 @@ jobs:
       - name: Setup npm
         run: npm install
       - name: Run unit test
-        run: npm run tets
+        run: npm run test
 

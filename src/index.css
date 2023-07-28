@@ -4,5 +4,8 @@
 
 :root{
   overflow: auto;
-  width: min-content;
+  min-width: min-content;
+  margin-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
